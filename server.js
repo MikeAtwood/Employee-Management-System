@@ -58,7 +58,26 @@ const startPrompt = () => {
 };
 
 //-------- View All Employees -------//
+viewEmployees = () => {
+    console.log("View All Employees...");
+    const sql = `SELECT employee.id,
+                    employee.first_name,
+                    employee.last_name,
+                    role.title,
+                    role.salary,
+                    department.name AS department,
+                    manager.first_name, manager.last_name AS manager
+                    FROM employee
+                        LEFT JOIN role ON employee.role_id = role.id
+                        LEFT JOIN department ON role.department_id = department.id
+                        LEFT JOIN employee manager ON employee.manager_id = manager.id`;
 
+    function(err, res) {
+        if (err) throw err
+        console.log(res)
+        startPrompt()
+    };
+};
 
 
 //-------- Add Employee -------//
