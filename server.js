@@ -59,7 +59,7 @@ const startPrompt = () => {
 
 //-------- View All Employees -------//
 viewEmployees = () => {
-    console.log("View All Employees...");
+    console.log("View All Employees...\n");
     const sql = `SELECT employee.id,
                     employee.first_name,
                     employee.last_name,
@@ -92,7 +92,17 @@ viewEmployees = () => {
 
 
 //-------- View All Departments -------//
-viewDepartments = () => {}
+viewDepartments = () => {
+    console.log("Viewing all Departments...\n");
+    const sql = `SELECT department.id AS id,
+                    department.name AS department FROM department`;
+        
+        connection.promise().query(sql, (err, rows) => {
+            if (err) throw err;
+            console.table(rows);
+            promptStart();
+        });
+};
 
 
 
