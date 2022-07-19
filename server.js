@@ -21,7 +21,7 @@ const startPrompt = () => {
     inquirer.prompt([
         {
             type: "list",
-            message: "What would you like to do",
+            message: "What would you like to do?",
             name: "choice",
             choices: [
                 "View All Employees",
@@ -57,4 +57,25 @@ const startPrompt = () => {
     });
 };
 
-//-------- Show All Departments -------//
+//-------- View All Employees -------//
+
+
+
+//-------- Add Employee -------//
+
+
+
+//-------- Update Employee -------//
+
+
+//-------- Add Role -------//
+
+
+
+//-------- View All Departments -------//
+viewDepartments = () => {}
+
+
+
+
+//-------- Add Department -------//
