@@ -72,11 +72,11 @@ viewEmployees = () => {
                         LEFT JOIN department ON role.department_id = department.id
                         LEFT JOIN employee manager ON employee.manager_id = manager.id`;
 
-    function(err, res) {
-        if (err) throw err
-        console.log(res)
-        startPrompt()
-    };
+    connection.promise().query(sql, (err, rows) => {
+        if (err) throw err;
+        console.table(rows);
+        startPrompt();
+    });
 };
 
 
