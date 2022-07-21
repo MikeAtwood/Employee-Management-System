@@ -15,14 +15,21 @@ To download, clone the SSH into your console.table and install mysql2 `npm i mys
 then run `run mysql -u root -p`.
 
 
-
-
-
-
-
-
-
-
 ## Demo
 
 ![Untitled_ Jul 20, 2022 7_33 PM](https://user-images.githubusercontent.com/103971335/180105425-cd124fa1-8017-45a1-9827-f7893e720392.gif)
+
+## Usage
+This app will alloq users to view, add, amd edit employees, roles, departments, and managers.
+Please refer to the video above for a demonstration.
+
+
+## Tests
+There are no tests for this application.
+
+## Questions
+
+
+
+
+
