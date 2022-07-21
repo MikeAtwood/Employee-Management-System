@@ -27,9 +27,9 @@ Please refer to the video above for a demonstration.
 ## Tests
 There are no tests for this application.
 
-## Questions
 
-
+## Contact
+If you have any questions about the repo, please feel free to contact me directly at [Email](mailto:atwood169@yahoo.com).
 
 
 
