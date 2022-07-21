@@ -6,8 +6,8 @@ using Node.js, Inquirer, and MySQL.
 
 
 ## Installation
-To download, clone the SSH into your console.table and install mysql2 [ npm i mysql2]. To view the database, run [npm start] and
-then run [ run mysql -u root -p ].
+To download, clone the SSH into your console.table and install mysql2 `npm i mysql2`. To view the database, run `npm start` and
+then run `run mysql -u root -p`.
 
 
 
