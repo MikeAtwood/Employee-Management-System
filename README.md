@@ -1,7 +1,13 @@
 # Employee-Management-System
 
+## Description
+An easy to use command-line application that allows the user to navigate and manage a company's employee database with ease, 
+using Node.js, Inquirer, and MySQL.
 
 
+## Installation
+To download, clone the SSH into your console.table and install mysql2 [ npm i mysql2]. To view the database, run [npm start] and
+then run [ run mysql -u root -p ].
 
 
 
